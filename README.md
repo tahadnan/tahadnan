@@ -12,10 +12,9 @@
 ```
 
 ## About Me
-- 🇲🇦 I'm a 16-year-old from Morocco
 - 🧮 I'm passionate about mathematics
 - 💻 I'm interested in technology in general
-- 🐍 Currently learning Python
+- 🌐 Currently learning Web Developement
 
 ## My Interests
 - Mathematics
@@ -28,7 +27,7 @@
 ## Connect with Me
 - [Twitter](https://x.com/TahaYasserAdnan)
 - [Instagram](https://www.instagram.com/tahayadnan)
-- GMAIL: taha.y.adnan@gmail.com
+- [GMAIL](mailto:taha.y.adnan@gmail.com)
 
 ## Good code:
 
@@ -45,12 +44,6 @@ Some code that I find good and like to acquire and save throughout my journey.
 
 ![tahadnan's Stats](https://github-readme-stats.vercel.app/api?username=tahadnan&theme=midnight-purple&show_icons=true&hide_border=true&count_private=true)
 
-</div>
-
-## The WWWH protocol:
-<div align='center'>
-
-## [WWWH](other/WWWH.md) 
 </div>
 
 ⭐️ From [Taha Yasser Adnan](https://github.com/tahadnan)
