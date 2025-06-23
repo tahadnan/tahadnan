@@ -14,7 +14,7 @@
 ## About Me
 - 🧮 I'm passionate about mathematics
 - 💻 I'm interested in technology in general
-- 🌐 Currently learning Web Developement
+- 🔮 Currently getting deeper in C, Linux and Python
 
 ## My Interests
 - Mathematics
@@ -22,6 +22,9 @@
 - Programming
 
 ## What I'm Learning
+- C Language
+- Linux
+- CS fundamental concepts 
 - Python programming
 
 ## Connect with Me
