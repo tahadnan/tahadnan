@@ -66,42 +66,45 @@ While following a C course with my mentor Mr. Jaspeer on [Neso Academy](https://
 
 ```c
 int repeatedDigitsCheck(int num){
-if (num <= 0) {
-printf("No negatives, no zeros");
-return 0;
+    if (num <= 0) {
+        printf("No negatives no zeros");
+        return 0;
+    }
+    
+    int count = 0; 
+    int digits[10];
+    while (num != 0) {
+        int last_digit = num % 10; 
+        num /= 10;
+        digits[count] = last_digit;
+        count++;
+    }
+
+    for (int i = 0; i < count - 1; i++) {
+        for (int j = i + 1; j < count; j++) {
+            if (digits[i] == digits[j]) {
+                printf("Yes it's %d\n", digits[i]);
+                return 0;
+            }
+        }
+    }
+    printf("No there is no repeating digits.\n");
+    return 0;
 }
-int count = 0;
-int digits[10];
-while (num != 0) {
-int last_digit = num % 10;
- num /= 10;
-digits[count] = last_digit;
- count++;
-}
-for (int i = 0; i < count - 1; i++) {
-for (int j = i + 1; j < count; j++) {
-if (digits[i] == digits[j]) {
-printf("Yes it's %d\n", digits[i]);
-return 0;
-}
-}
-}
-printf("No, there are no repeating digits.\n");
-return 0;
-}
+
 int mentorApproach(int num){
-int seen[10] = {0};
-while (num > 0) {
-int remainder = num%10;
-if (seen[remainder] == 1) {
-printf("Yes it's %d\n", remainder);
-return 0;
-}
-seen[remainder] = 1;
- num /= 10;
-}
-printf("No, there are no repeating digits.\n");
-return 0;
+    int seen[10] = {0};
+    while (num > 0) {
+        int remainder = num%10;
+        if (seen[remainder] == 1) {
+            printf("Yes it's %d\n", remainder);
+            return 0;
+        }
+        seen[remainder] = 1;
+        num /= 10;
+    }
+    printf("No there is no repeating digits.\n");
+    return 0;
 }
 ```
 + Mr. Jaspeer's Solution Explanation:
