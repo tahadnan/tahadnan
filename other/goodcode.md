@@ -60,3 +60,52 @@ The clever [solution](https://www.codewars.com/kata/reviews/546f92300e7b08fe6100
 def alphabet_position(text):
     return ' '.join(str(ord(c) - 96) for c in text.lower() if c.isalpha())
 ```
+
+## Repetitive digit check
+While following a C course with my mentor Mr. Jaspeer on [Neso Academy](https://www.nesoacademy.org/pl/02-cprogramming/), specifically in the "Arrays in C" section, I was given an interesting problem: given a number, check if any of its digits are repetitive. Here are my solution and my mentor's solution right after it (I enhanced it a tiny bit compared to what he wrote):
+
+```c
+int repeatedDigitsCheck(int num){
+if (num <= 0) {
+printf("No negatives, no zeros");
+return 0;
+}
+int count = 0;
+int digits[10];
+while (num != 0) {
+int last_digit = num % 10;
+ num /= 10;
+digits[count] = last_digit;
+ count++;
+}
+for (int i = 0; i < count - 1; i++) {
+for (int j = i + 1; j < count; j++) {
+if (digits[i] == digits[j]) {
+printf("Yes it's %d\n", digits[i]);
+return 0;
+}
+}
+}
+printf("No, there are no repeating digits.\n");
+return 0;
+}
+int mentorApproach(int num){
+int seen[10] = {0};
+while (num > 0) {
+int remainder = num%10;
+if (seen[remainder] == 1) {
+printf("Yes it's %d\n", remainder);
+return 0;
+}
+seen[remainder] = 1;
+ num /= 10;
+}
+printf("No, there are no repeating digits.\n");
+return 0;
+}
+```
++ Mr. Jaspeer's Solution Explanation:
+> First thing to know is that the remainder (which we get by using the modulo `%` operator) of dividing by 10 is the last digit of the dividend, and that when dividing an integer by 10 in C, the last digit gets removed—it's like floor division in Python. Since a number's digit can go from 0 to 9, the `seen` array has been created with a length of 10, so every time we check a number's digit, we see if we have seen it by checking `seen[digit]`. If we haven't seen it, we place a 1 in `seen[digit]`, but if `seen[digit]` is already of value 1, which means we've seen it earlier, boom—we found the repeated digit!
+
+It works, it's faster, brilliant and clear. Of course it's not a no-brainer, and it takes creativity to come up with such a solution.
+Keep learning and contributing!
