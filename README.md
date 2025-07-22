@@ -25,7 +25,7 @@
 - C Language
 - Linux
 - CS fundamental concepts 
-- Python programming
+- Python programming(Solidifying knowledge and improving it)
 
 ## Connect with Me
 - [Twitter](https://x.com/TahaYasserAdnan)
@@ -48,6 +48,4 @@ Some code that I find good and like to acquire and save throughout my journey.
 ![tahadnan's Stats](https://github-readme-stats.vercel.app/api?username=tahadnan&theme=midnight-purple&show_icons=true&hide_border=true&count_private=true)
 
 </div>
-
-⭐️ From [Taha Yasser Adnan](https://github.com/tahadnan)
 
