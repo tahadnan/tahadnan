@@ -27,9 +27,10 @@
 - CS fundamental concepts 
 - Python programming(Solidifying knowledge and improving it)
 
+## IMPORTANT NOTE
+As of late 2025 summer, when it comes to programming, I have been inactive in both learning and making projects, for several reasons related to personal circumstances and external factors, will be back soon, keep learning and keep contributing !
+
 ## Connect with Me
-- [Twitter](https://x.com/TahaYasserAdnan)
-- [Instagram](https://www.instagram.com/tahayadnan)
 - [GMAIL](mailto:taha.y.adnan@gmail.com)
 
 ## Good code:
